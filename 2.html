@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Refer to console</h1>
+    <script>
+      const dataArray = [
+        {
+          id: 1,
+          title: "The Great Gatsby",
+          author: "F. Scott Fitzgerald",
+          publicationYear: 1925,
+          genres: "Fiction, Classics",
+        },
+        {
+          id: 2,
+          title: "To Kill a Mockingbird",
+          author: "Harper Lee",
+          publicationYear: 1960,
+          genres: "Fiction, Coming-of-Age",
+        },
+      ];
+
+      //template literal ${} is used to add the value of variable into string
+
+      console.log("Question 2a: ");
+      console.log(`Title of first book: ${dataArray[0].title}`);
+
+      console.log("\n\nQuestion 2b: ");
+      console.log(`Author of second book: ${dataArray[1].author}`);
+
+      console.log("\n\nQuestion 2c: ");
+      console.log("Genres of all books: ");
+      dataArray.map((book) => {
+        //loop
+        console.log(book.genres);
+      });
+    </script>
+  </body>
+</html>
